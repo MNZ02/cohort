@@ -1,0 +1,21 @@
+{
+  "name": "cohort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http-server-1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3",
+    "nodemon": "^3.1.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.23.4"
+  }
+}
