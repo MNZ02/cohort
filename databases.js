@@ -1,12 +1,16 @@
 import express from 'express'
 import mongoose from 'mongoose'
+import 'dotenv/config'
 const app = express()
 
 app.use(express.json())
 
 mongoose.connect(
-  'mongodb+srv://abdulminhaz2:Abdul123@cluster0.cxd433y.mongodb.net/demo'
+  process.env.MONGODB_URL || 'mongodb://localhost:27017/test',
 )
+.then(() => {
+  console.log('Connected to database');
+})
 
 const Users = mongoose.model('Users', {
   name: String,
